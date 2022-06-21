@@ -43,3 +43,8 @@ yarn-debug.log*
 .Ds_Store
 /vender/bundle
 /.idea
+
+.project
+.settings/
+/path/to/file
+

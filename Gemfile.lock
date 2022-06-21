@@ -100,6 +100,7 @@ GEM
     devise-bootstrap-views (1.1.0)
     devise-i18n (1.10.2)
       devise (>= 4.8.0)
+    devise-i18n-views (0.3.7)
     digest (3.1.0)
     erubi (1.10.0)
     execjs (2.8.1)
@@ -184,9 +185,9 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.4.2)
       loofah (~> 2.3)
-    rails-i18n (7.0.3)
+    rails-i18n (6.0.0)
       i18n (>= 0.7, < 2)
-      railties (>= 6.0.0, < 8)
+      railties (>= 6.0.0, < 7)
     railties (6.0.5)
       actionpack (= 6.0.5)
       activesupport (= 6.0.5)
@@ -279,8 +280,8 @@ DEPENDENCIES
   devise
   devise-bootstrap-views
   devise-i18n
+  devise-i18n-views
   jbuilder (~> 2.7)
-  letter_opener
   letter_opener_web
   listen (~> 3.2)
   net-smtp
@@ -288,7 +289,7 @@ DEPENDENCIES
   psych (~> 3.1)
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.4)
-  rails-i18n
+  rails-i18n (~> 6.0)
   sass-rails (>= 6)
   sassc (< 2.2.0)
   selenium-webdriver
