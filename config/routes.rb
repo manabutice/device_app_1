@@ -22,6 +22,8 @@ Rails.application.routes.draw do
   
   # root 'static_pages#top'
   # root 'static_pages#home'
+  # root :to => "static_pages#home" #追加
+
   
   get "/users/dash_boards", to: "users#show", as: "user_root"
 end

@@ -15,9 +15,11 @@
  */
 
  // ***** 次を追加 *****
-@import "bootstrap/scss/bootstrap";
+//  @import "bootstrap/scss/bootstrap";
 // ***** 以上を追加 *****
-
+// @import "bootstrap-sprockets";
+@import "bootstrap";
+// @import "protospace";
 // max-width
 
 .mw-md {

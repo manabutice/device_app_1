@@ -12,10 +12,14 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= render 'layouts/header' %>
-    <div class="container-fluid py-4 <%= devise_controller? ? 'mw-md' : 'mw-xl' %>">
-    <%= yield %>
+    <div class="container-fluid">
+      <div class="row justify-content-md-center">
+        <div class="flash text-center">
+          <p class="notice"><%= notice %></p>
+          <p class="alert"><% alert %></p>
+        </div>
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
