@@ -22,13 +22,38 @@
 // @import "protospace";
 // max-width
 
-.mw-md {
-  max-width: 576px;
+.actions{
+  text-align:center;
 }
 
-// ***** 以下を追加 *****
-
-.mw-xl {
-  max-width: 1200px;
+.btn-login{
+  margin:20px 0px;
 }
 
+
+.btn-edit{
+  margin-bottom:0px;
+  width:150px
+}
+
+.btn-logout{
+  margin-top:0px;
+  width:150px;
+}
+
+.account-delete{
+  text-align:center;
+}
+
+// フラッシュメッセージ //
+.alert-notice{
+  text-align:center;
+  color:#31708f;
+  background-color:#d9edf7;
+}
+
+.alert-alert{
+  text-align:center;
+  color:#a94442;
+  background-color:#f2dede;
+}

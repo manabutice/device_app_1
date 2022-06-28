@@ -1,8 +1,11 @@
-<h1><%= t('.sign_up') %></h1>
+<h1 class="text-center"><%= t('.sign_up') %></h1>
 
+<div class="col-4">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= bootstrap_devise_error_messages! %>
+  <div class="px-2">
+  <%= devise_error_messages! %>
 
+  <div class="col-8 offset-2 mx-auto">
   <div class="form-group">
     <%= f.label :name %>
     <%= f.text_field :name, autofocus: true, autocomplete: 'name', class: 'form-control' %>
@@ -27,9 +30,11 @@
     <%= f.password_field :password_confirmation, autocomplete: 'current-password', class: 'form-control' %>
   </div>
 
+  <div class="actions">
   <div class="form-group">
-    <%= f.submit t('.sign_up'), class: 'btn btn-primary' %>
+    <%= f.submit t('.sign_up'), class: 'btn btn-primary ' %>
   </div>
 <% end %>
 
+<div class="form-group col-12 my-3">
 <%= render 'devise/shared/links' %>

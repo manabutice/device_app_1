@@ -6,4 +6,8 @@ class Users::DashBoardsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get create" do
+    get users_dash_boards_create_url
+    assert_response :success
+  end
 end
