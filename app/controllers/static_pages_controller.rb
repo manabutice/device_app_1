@@ -4,10 +4,3 @@ class StaticPagesController < ApplicationController
        redirect_to '/users/sign_up'
   end
 end
-
-#   def top
-#   end
-
-#   def help
-#   end
-# end

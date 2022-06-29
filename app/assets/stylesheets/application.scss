@@ -14,13 +14,9 @@
  *= require_self
  */
 
- // ***** 次を追加 *****
-//  @import "bootstrap/scss/bootstrap";
-// ***** 以上を追加 *****
-// @import "bootstrap-sprockets";
+
 @import "bootstrap";
-// @import "protospace";
-// max-width
+
 
 .actions{
   text-align:center;
