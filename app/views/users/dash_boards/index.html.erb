@@ -1,17 +1,6 @@
-<%
-=begin%>
- <h1>Users::DashBoards#index</h1>
-<p>Find me in app/views/users/dash_boards/index.html.erb</p>
-<%= render 'layouts/flash_messages' %> 
-<%
-=end%>
 <div class="dash-boards">
 <h1>Dash Boards</h1>
-<%
-=begin%>
- <h2><%=current_user.name %></h2> 
-<%
-=end%>
-
-  <%=link_to "編集", edit_user_registration_path, class:"btn btn-primary btn-edit" %><br />
-  <%=link_to "ログアウト", logout_path, class:"btn btn-warning btn-logout" %>
+<h2><%=current_user.name %></h2>
+  <%=link_to "記事一覧", users_articles_path, class:"btn btn-primary btn-article-index" %><br />
+  <%=link_to "編集", edit_user_registration_path, class:"btn btn-primary btn-article-edit" %><br />
+  <%=link_to "ログアウト", logout_path, class:"btn btn-warning btn-article-logout" %><br />
